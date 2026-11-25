@@ -1,5 +1,9 @@
 # Stop AI Slop · 中文版
 
+<!-- yarkr:badges:start -->
+[![Indexed on Yarkr](https://api.yarkr.com/functions/v1/api/api/v1/badges/repos/VincentOld/stop-slop-zh/version.svg)](https://yarkr.com/arks/vincentold/stop-slop-zh)
+<!-- yarkr:badges:end -->
+
 让 AI 写出来的中文不再像 AI 写的。
 
 这是一套提示词 Skill，给 Claude / GPT / Gemini / 文心 / 通义 / DeepSeek 等模型用，识别并消除中文 AI 写作的典型痕迹：套话、排比三件套、名词化动词、抽象主语、金句收尾、总分总八股。
@@ -103,3 +107,35 @@ Claude 会自动读取 SKILL.md 和 references。
 ## 协议
 
 MIT
+
+<!-- yarkr:install:start -->
+## Install with Yarkr
+
+This repo is indexed on [Yarkr](https://yarkr.com/arks/vincentold/stop-slop-zh) as the ark [vincentold/stop-slop-zh](https://yarkr.com/arks/vincentold/stop-slop-zh), so its skills install into Claude Code, Codex, Cursor and other agent harnesses with one command.
+
+### CLI
+
+Install the whole ark, which Yarkr keeps equal to this repo:
+
+```bash
+npx yarkr-cli sync vincentold/stop-slop-zh
+```
+
+Or add individual skills:
+
+```bash
+npx yarkr-cli add skill:vincentold/stop-slop-zh/stop-ai-slop-zh
+```
+
+No Node.js? `curl -fsSL https://yarkr.com/install.sh | sh` (macOS, Linux) or `irm https://yarkr.com/install.ps1 | iex` (Windows PowerShell) installs `yarkr` as a standalone binary; then type `yarkr` in place of `npx yarkr-cli`.
+
+### MCP
+
+Connect your agent to the ark over MCP:
+
+```bash
+npx yarkr-cli mcp add vincentold/stop-slop-zh
+```
+
+Or point any MCP client at `https://api.yarkr.com/functions/v1/api/mcp/o/vincentold/stop-slop-zh`.
+<!-- yarkr:install:end -->
